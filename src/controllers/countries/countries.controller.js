@@ -61,7 +61,6 @@ const getCountriesPopulation = co.wrap(function* getCountriesPopulation(req, res
       res.json(json);
        return next()
      }).catch((err)=>{
-       res.status(500)
         return next(new errors.InternalServerError(err, 'Server error retrieving countries.'));
      })
 });
