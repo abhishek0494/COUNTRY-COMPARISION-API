@@ -53,7 +53,7 @@ Zip your solution, upload it somewhere, and send us a link to the zipped file.
   * **What if we have a database of users and we wanted to make our API smarter by defaulting comparisons to always include the population of the current user's country.  How could we accomplish this?**
 				  * We can add user information to req object in a middleware then in the api routes callback function we can check if the countryList has user's country in it or not and if its not there we can push users country in the list before sending the request to the third party.
   * **What if we wanted to keep a tally of the most frequently requested countries and have this be available to consumers.  How could we accomplish this?**
-  * we can maintain an object in db `{country1:count,country2:count....countryn:count}` and we keep updating the count for the country at every request and we can get the most frequently requested countries from the count. and we can make it available to customers through an api.
+			  * we can maintain an object in db `{country1:count,country2:count....countryn:count}` and we keep updating the count for the country at every request and we can get the most frequently requested countries from the count. and we can make it available to customers through an api.
 2. **Dockerize the API**
 
 [Link to docker image](https://hub.docker.com/r/abhishek0494/country-comparision-api)
