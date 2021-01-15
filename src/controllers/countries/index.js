@@ -39,7 +39,7 @@ function routes(app, rootUrl) {
     * for the given set of countries separated by ","
     * 
     *
-    * @apiSampleRequest /api/v1/countries/population
+    * @apiSampleRequest /api/v1/countries/population?countries='Brazil'&sortOrder='asc'
     *
     * @apiSuccess {json} Array of all country names
     * @apiSuccessExample {json} Success-Response:
