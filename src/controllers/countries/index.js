@@ -39,7 +39,7 @@ function routes(app, rootUrl) {
     * for the given set of countries separated by ","
     * 
     *
-    * @apiSampleRequest /api/v1/countries/population?countries='Brazil'&sortOrder='asc'
+    * @apiSampleRequest /api/v1/countries/population?countries=Brazil,Mexico&sortOrder=asc
     *
     * @apiSuccess {json} Array of all country names
     * @apiSuccessExample {json} Success-Response:
@@ -47,8 +47,13 @@ function routes(app, rootUrl) {
     *   [
     *     {
     *                 "date": "2021-01-10",
-    *                 "population": 216792238,
+    *                 "population": 21692238,
     *                 "country": "Brazil"
+    *       },
+    *       {
+    *                 "date": "2021-01-10",
+    *                 "population": 216792238,
+    *                 "country": "Mexico"
     *       }
     *   ]
     *
